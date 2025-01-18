@@ -273,6 +273,23 @@ a {
   column-gap: 24px;
 }
 
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  
+}
+
+/* Footer part */
+
+.padding-footer {
+  padding: 100px 0;
+}
+
 .footer {
   background-color: #2e2f42;
 }
@@ -283,4 +300,7 @@ a {
 
 .footer-text {
   color: #f4f4fd;
+  width: 264px;
+  text-align: left;
+  padding-top: 16px;
 }
