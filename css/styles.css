@@ -312,11 +312,12 @@ img {
 
 .nav-logo-footer {
   display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-newcolor {
   color: #f4f4fd;
-  margin-bottom: 16px;
+  
 }
 
 .footer-text {
