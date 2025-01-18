@@ -32,6 +32,10 @@ a {
 
 /* Common part */
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -46,6 +50,7 @@ a {
   padding: 0;
   border: 0;
   clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -183,9 +188,10 @@ a {
   border: 0;
   margin: 0 auto;
   border-radius: 4px;
+  min-width: 169px;
 }
 
-.main-container {
+.main {
   padding-bottom: 188px;
   padding-top: 188px;
 }
@@ -214,19 +220,20 @@ a {
   align-items: flex-start;
 }
 
-.benefits-text {
-  margin-top: 8px;
+.card-title-benefits {
+  margin-bottom: 8px;
 }
 
 /* Team part */
 
 .padding-subtitle {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .team-item {
@@ -236,16 +243,16 @@ a {
 .team-item-card {
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-card-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 16px;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  padding: 32px 0px;
 }
 
 .team {
@@ -260,16 +267,25 @@ a {
   font-size: 16px;
 }
 
+.card-title-text {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card-text-align {
+  text-align: center;
+}
+
 /* Portfolio part */
 
-.padding-subtitle {
-  padding-bottom: 60px;
+.margin-subtitle {
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 60px;
+  row-gap: 48px;
   column-gap: 24px;
 }
 
@@ -283,23 +299,28 @@ a {
   padding: 32px 16px;
 }
 
-/* Footer part */
-
-.padding-footer {
-  padding: 100px 0;
+.card-title-info {
+  margin-bottom: 8px;
 }
+
+/* Footer part */
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.nav-logo-footer {
+  display: inline-block;
 }
 
 .logo-newcolor {
   color: #f4f4fd;
+  margin-bottom: 16px;
 }
 
 .footer-text {
   color: #f4f4fd;
   width: 264px;
   text-align: left;
-  padding-top: 16px;
 }
