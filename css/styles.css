@@ -64,7 +64,6 @@ a {
   text-align: center;
   max-width: 496px;
   margin: 0 auto;
-  padding-top: 188px;
   margin-bottom: 48px;
 }
 
@@ -188,6 +187,7 @@ a {
 
 .main-container {
   padding-bottom: 188px;
+  padding-top: 188px;
 }
 
 .main-button:hover,
@@ -281,7 +281,6 @@ a {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  
 }
 
 /* Footer part */
